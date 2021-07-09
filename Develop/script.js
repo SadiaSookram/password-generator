@@ -1,5 +1,12 @@
-// Assignment code here
-
+// Variables used for Password generator
+var generateBtn = ""
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var numberSel = "0123456789";
+var symbols = "!#$%&()*+,-./:;<=>?@[\]^_{|}~";
+var passwordLen = "16"
+var passwordText = document.querySelector("#password");
+var generateBtn = document.querySelector("#generate");
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -12,6 +19,7 @@ function writePassword() {
   passwordText.value = password;
 
 }
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
