@@ -4,7 +4,7 @@ var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var numberSel = "0123456789";
 var symbols = "!#$%&()*+,-./:;<=>?@[\]^_{|}~";
-var passwordLen = "16"
+var passwordLen = (8,128)
 var passwordText = document.querySelector("#password");
 var generateBtn = document.querySelector("#generate");
 
@@ -12,6 +12,8 @@ var generateBtn = document.querySelector("#generate");
 var generateBtn = document.querySelector("#generate");
 
 // User window criteria (true or false)
+ var passwordLen = window.prompt("Please choose Password length between 8-128 characters ");
+
 
  var uppercaseConfirm = window.confirm("Would you like password to have Upper Case Letters?"); 
  
@@ -23,12 +25,9 @@ var generateBtn = document.querySelector("#generate");
   
 
  var symbolsconfirm = window.confirm("Do you want Symbols in your password ?");
-    
 
 
-
-//Generator Functions if window is confirmed
-
+ //Generator Functions if window is confirmed
 if (uppercaseConfirm === true) {
   var upperCase = Math.floor(Math.random()*upperCase.length);}
 
@@ -41,10 +40,15 @@ if (numberselConfirm === true) {
 if (symbolsconfirm === true) {
       var symbols = Math.floor(Math.random()*symbols.length);}
 
-        var passowrd= "";
-// for loop writing password 
-for (var i = 0; i < passwordLen; i++){}
+        var password= "";
 
+// Generated passowrd
+generatePassword(upperCase, lowerCase, numberSel, symbol); {
+  password = "";
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 function writePassword() {
@@ -54,6 +58,8 @@ function writePassword() {
   passwordText.value = password;
 
 }
+ 
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+
+
+
