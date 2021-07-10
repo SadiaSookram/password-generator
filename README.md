@@ -16,7 +16,7 @@ incliding Uppercase, Lowercase, Symbols,and Number characters. Once you hit gene
 
 ## Preview
 
-![Preview](./develop/images/screenshot.PNG)
+![Preview](./Develop/images/screenshot.PNG)
 
 ## Contribution 
 Made by Sadia Sookram 🍃
