@@ -68,9 +68,9 @@ function generatePassword(){
   } 
   console.log("password", password );
   return password;
-  var passwordText = document.querySelector("#password");
-  var generateBtn = document.querySelector("#generate");
 }
+var passwordText = document.querySelector("#password");
+  var generateBtn = document.querySelector("#generate");
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
