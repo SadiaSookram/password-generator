@@ -11,9 +11,16 @@ var generateBtn = document.querySelector("#generate");
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+var password ='';
+
+//Generate password & for loop
+
+function generatePassword(upperCase , lowerCase, numberSel, symbol, passwordlen){
+
+}
 
 // User window criteria (true or false)
-
+ 
  var passwordLen = window.prompt("Please choose Password length between 8-128 characters ");
 
 
@@ -42,24 +49,14 @@ if (numberselConfirm === true) {
 if (symbolsconfirm === true) {
       var symbols = Math.floor(Math.random()*symbols.length);} 
 
-        
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-//Generate password & for loop
-
-function generatePassword(upperCase , lowerCase, numberSel, symbol, passwordlen)
-var password ='';
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  passwordText.value = password;        
 
-  
-};
-
-
-
+}
