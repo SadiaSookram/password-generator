@@ -10,13 +10,16 @@ var passwordLen = (8,128)
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-// User window criteria (true or false)
+//Generate Password Function 
+function generatePassword(){
+
+  // User window criteria (true or false)
  
  var passwordLen = window.prompt("Please choose Password length between 8-128 characters ");
  if (passwordLen < 8 || passwordLen > 128){
    window.alert ("Please enter in valid amount.");
-   return;
- }
+   return; }
+ 
  var uppercaseConfirm = window.confirm("Would you like password to have Upper Case Letters?"); 
  
    
@@ -29,8 +32,6 @@ var generateBtn = document.querySelector("#generate");
  var symbolsConfirm = window.confirm("Do you want Symbols in your password ?");
 
 //Generate password functions using arrays if window is confirmed
-
-function generatePassword(){
 
   //Console log for password fuctions
   console.log('passwordLen', passwordLen);
