@@ -18,7 +18,7 @@ function generatePassword(){
  var passwordLen = window.prompt("Please choose Password length between 8-128 characters ");
  if (passwordLen < 8 || passwordLen > 128){
    window.alert ("Please enter in valid amount.");
-   return; }
+   return generatePassword(); }
  
  var uppercaseConfirm = window.confirm("Would you like password to have Upper Case Letters?"); 
  
